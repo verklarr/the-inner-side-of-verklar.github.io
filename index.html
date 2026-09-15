@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Inner Side of Verklar</title>
+    <style>
+        :root {
+            --bg-color: #0f1117;
+            --card-bg: #1e222d;
+            --text-color: #f0f2f5;
+            --accent-color: #6366f1;
+            --text-muted: #9ca3af;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        header {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: -0.025em;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .track-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .track-card {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .track-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 12px;
+        }
+
+        .track-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .track-genre {
+            font-size: 0.875rem;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .track-description {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+
+        audio {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Music production portfolio of The Inner Side of Verklar</h1>
+            <p class="subtitle">Original soundtracks of many genres</p>
+        </header>
+
+        <main class="track-list">
+            <!-- Track Item 1 -->
+            <article class="track-card">
+                <div class="track-info">
+                    <h2 class="track-title">Hollow Feelings - Theme for a Dark Level</h2>
+                    <span class="track-genre">Atmospheric Electronic Metal</span>
+                </div>
+                <p class="track-description">A melancholic metal track that will make you want to punch your wall and cry at the same time.</p>
+                <audio controls preload="none"> 
+                    <source src="audio/hollow feeling.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </article>
+
+            <!-- Track Item 2 -->
+            <article class="track-card">
+                <div class="track-info">
+                    <h2 class="track-title">Journey Begins - Theme for open world exploration</h2>
+                    <span class="track-genre">Ambient</span>
+                </div>
+                <p class="track-description">Background track suitable for looking for someone that very important for you.</p>
+                <audio controls preload="none">
+                    <source src="audio/Journey Begins.wav" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </article>
+
+            <!-- Track Item 3 -->
+            <article class="track-card">
+                <div class="track-info">
+                    <h2 class="track-title">Thrill - Theme for something big you learned today</h2>
+                    <span class="track-genre">Orchestral</span>
+                </div>
+                <p class="track-description">It's something big and important. Good for you.. i hope.</p>
+                <audio controls preload="none">
+                    <source src="audio/Thrill.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </article>
+            </article>
+
+            <!-- Track Item 3 -->
+            <article class="track-card">
+                <div class="track-info">
+                    <h2 class="track-title">Daylight Rest - Farming Theme</h2>
+                    <span class="track-genre">Acoustic Ambient</span>
+                </div>
+                <p class="track-description">Warm.</p>
+                <audio controls preload="none">
+                    <source src="audio/Daylight rest.wav" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </article>
+        </main>
+
+    </div>
+
+</body>
+</html>
